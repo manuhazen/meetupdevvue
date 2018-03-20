@@ -25,14 +25,15 @@ export default new Router({
       component: Meetups
     },
     {
-      path: '/meetups/new',
-      name: 'CreateMeetup',
-      component: MeetupForm
-    },
-    {
       path: '/meetups/:id',
       name: 'Meetup',
+      props: true,
       component: Meetup
+    },
+    {
+      path: '/createmeetup',
+      name: 'CreateMeetup',
+      component: MeetupForm
     },
     {
       path: '/profile',
