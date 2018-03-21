@@ -32,6 +32,7 @@ new Vue({
   components: { App },
   template: '<App/>',
   created() {
-    firebase.initializeApp(FirebaseConfig)
+    firebase.initializeApp(FirebaseConfig),
+    this.$store.dispatch('loadMeetups');
   }
 })
