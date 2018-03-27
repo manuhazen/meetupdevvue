@@ -9,6 +9,8 @@
         <v-btn large router to="/createmeetup"  class="info">Organize Meetups</v-btn>
       </v-flex>
     </v-layout>
+
+    <!-- Loader -->
     <v-layout>
       <v-flex xs12 class="text-xs-center">
         <v-progress-circular indeterminate class="primary--text" :width="7" :size="70" v-if="loading"></v-progress-circular>
@@ -18,7 +20,7 @@
     <v-layout row wrap class="mb-2" v-if="!loading">
       <v-flex xs12>
         <v-carousel  style="cursor: pointer;">
-          <v-carousel-item v-for="(item,i) in meetups" :src="item.src" :key="i" @click.prevent.native="onLoadMeetup(i)">
+          <v-carousel-item v-for="(item,i) in meetups" :src="item.imageUrl" :key="item.title" @click.prevent.native="onLoadMeetup(i)">
             <div class="title mx-auto" >
               {{ item.title }}
             </div>

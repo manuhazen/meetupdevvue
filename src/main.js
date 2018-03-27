@@ -14,6 +14,7 @@ import DateFilter from './filters/date'
 import FirebaseConfig from './firebase/config'
 
 import AlertComp from './components/utils/Alert'
+import EditMeetupDetailsDialog from './components/Meetup/Edit/EditMeetupDetailsDialog'
 
 Vue.filter('dateFormat', DateFilter)
 
@@ -21,6 +22,7 @@ Vue.use(Vuetify)
 Vue.use(VueMoment)
 
 Vue.component('app-alert', AlertComp)
+Vue.component('app-edit-meetup-details-dialog', EditMeetupDetailsDialog)
 
 Vue.config.productionTip = false
 

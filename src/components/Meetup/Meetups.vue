@@ -8,7 +8,7 @@
                         <v-layout row>
                             <v-flex xs5 sm4 md3>
                                 <v-card-media 
-                                :src="meetup.src" 
+                                :src="meetup.imageUrl" 
                                 height="150px" >
                                 </v-card-media>
                             </v-flex>
