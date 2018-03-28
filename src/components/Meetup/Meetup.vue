@@ -19,7 +19,7 @@
                 <v-card-text>
                     <div class="mb-1"> {{ meetup.date | moment("dddd, MMMM Do YYYY") }} at {{ meetup.time }}  - {{ meetup.location }}</div>
                     <div class="info--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in vel quae ullam sint quo, sunt tempore necessitatibus debitis. Alias maxime aut iste numquam optio perspiciatis atque saepe, assumenda velit.
+                        {{ meetup.description }}
                     </div>
                 </v-card-text>
                 <v-card-actions>
